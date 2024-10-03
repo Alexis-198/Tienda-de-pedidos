@@ -9,7 +9,6 @@
     <title>Pedidos App</title>
 </head>
 <body>
-    
 
     <div id="user-info-form" class="modal">
         <div class="modal-content">
@@ -27,70 +26,60 @@
             </form>
         </div>
     </div>
-    
-<header>
-    <a href="https://www.instagram.com/dulci_trico?igsh=MTN0d2V3eWVkd2Z1cA==">
-        <img src="IMG/Dulcitrico.png" width="90" height="100" alt="Logo Dulcitrico">
-    </a>
-    <div class="logo">
+
+    <header>
         <a href="https://www.instagram.com/dulci_trico?igsh=MTN0d2V3eWVkd2Z1cA==">
-            <img src="IMG/Ig.png" alt="Instagram Logo">
+            <img src="IMG/Dulcitrico.png" width="90" height="100" alt="Logo Dulcitrico">
         </a>
-    </div>
-</header>
+        <div class="logo">
+            <a href="https://www.instagram.com/dulci_trico?igsh=MTN0d2V3eWVkd2Z1cA==">
+                <img src="IMG/Ig.png" alt="Instagram Logo">
+            </a>
+        </div>
+    </header>
 
-<h1>Bienvenidos a Ositos Dulces, tu tienda favorita.</h1>
-<br>
-<p>Hecha un vistazo a nuestros productos</p>
-<br>
-<div class="contenedor-productos">
-    
-    <div class="items">
-        <figure>
-            <img src="IMG/azulito loco.jpg" alt="Azulito">
-        </figure>
-        <div class="info-producto">
-            <h3>Azulitos</h3>
-            <div class="opciones">
-                <form>  
-                        <option value="2.50">Coctel Azulito Vaso Grande 14 oz - $1.50</option>
-                    </select>
-                </form>
+    <h1>Bienvenidos a Ositos Dulces, tu tienda favorita.</h1>
+    <br>
+    <p>Hecha un vistazo a nuestros productos</p>
+    <br>
+    <div class="contenedor-productos">
+        
+        <div class="items">
+            <figure>
+                <img src="IMG/azulito loco.jpg" alt="Azulito">
+            </figure>
+            <div class="info-producto">
+                <h3>Azulitos</h3>
+                <div class="opciones">
+                    <label for="cantidad-azulitos">Ingrese la cantidad:</label>
+                    <input type="number" id="cantidad-azulitos" min="0" value="0"><br>
+                    <div id="resultado-azulitos"></div>
+                    <span id="precio-producto-azulitos"></span>
+                </div>
+            </div>
+        </div>
 
-                <label for="cantidad-azulitos">Ingrese la cantidad:</label>
-                <input type="number" id="cantidad-azulitos" min="0" value="0"><br>
-                <div id="resultado-azulitos"></div>
-                <span id="precio-producto-azulitos"></span>
+        <div class="items">
+            <figure>
+                <img src="IMG/gomitas locas.jpg" alt="Gomi locas">
+            </figure>
+            <div class="info-producto">
+                <h4>Gomitas</h4>
+                <div class="opciones">
+                    <label for="cantidad-gomitas">Ingrese la cantidad:</label>
+                    <input type="number" id="cantidad-gomitas" min="0" value="0">
+                    <div id="resultado-gomitas"></div>
+                </div>
             </div>
         </div>
     </div>
 
- 
-    <div class="items">
-        <figure>
-            <img src="IMG/gomitas locas.jpg" alt="Gomi locas">
-        </figure>
-        <div class="info-producto">
-            <h4>Gomitas</h4>
-            <div class="opciones">
-                <form>
-                          <option value="1.50">Gomitas Enchiladas - $1.50</option>
-                    </select>
-                </form>
-                <label for="cantidad-gomitas">Ingrese la cantidad:</label>
-                <input type="number" id="cantidad-gomitas" min="0" value="0">
-                <div id="resultado-gomitas"></div>
-            </div>
-        </div>
+    <div class="total">
+        <br><br>
+        <button onclick="total()">Calcular Total</button>
+        <br><br>
+        <div id="Resultado"></div>
     </div>
-        </div>
-
-<div class="total">
-    <br><br>
-    <button onclick="total()">Calcular Total</button>
-    <br><br>
-    <div id="Resultado"></div>
-</div>
 
 </body>
 </html>
