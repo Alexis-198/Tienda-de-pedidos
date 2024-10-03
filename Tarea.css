@@ -1,33 +1,31 @@
-/* Estilos generales */
 *::before,
 *::after,
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+padding: 0;
+box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto;
-  max-width: 90%;
-  font-family: 'Lato', sans-serif;
-  color: #333;
-  background: linear-gradient(180deg, rgb(189, 89, 243), rgb(221, 100, 100), rgb(112, 103, 199));
+margin: 0 auto;
+max-width: 90%;
+font-family: 'Lato', sans-serif;
+color: #333;
+background: linear-gradient(180deg, rgb(189, 89, 243), rgb(221, 100, 100), rgb(112, 103, 199));
 }
 
-/* Títulos */
 h1 {
-  text-align: center;
-  font-size: 2rem;
-  color: beige;
-  text-shadow: 3px 9px 3px rgb(254, 8, 8);
+text-align: center;
+font-size: 2rem;
+color: beige;
+text-shadow: 3px 9px 3px rgb(254, 8, 8);
 }
 
 h2 {
   text-align: center;
-  font-size: 1.2rem;
-  color: beige;
-  text-shadow: 3px 9px 3px rgb(254, 8, 8);
+  font-size: 1.2rem; /* Cambié a rem para consistencia */
+  color: rgb(0, 0, 0);
+  text-shadow: 3px 9px 3px rgb(0, 0, 0);
 }
 
 h3, h4 {
@@ -36,119 +34,255 @@ h3, h4 {
   color: beige;
   text-shadow: 3px 9px 3px rgb(254, 8, 8);
 }
+  
 
-/* Opciones */
 #option-azulitos, #option-gomitas, #option-pinchos {
-  text-align: center;
-  font-size: 1.25rem;
-  color: rgb(0, 0, 0);
-  text-shadow: 1px 2px 3px rgb(82, 151, 212);
+text-align: center;
+font-size: 1.25rem;
+color: rgb(0, 0, 0);
+text-shadow: 1px 2px 3px rgb(82, 151, 212);
 }
 
-/* Párrafos */
 p {
-  text-align: center;
-  font-size: 1.5rem;
-  color: rgb(236, 238, 241);
-  text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.722);
+text-align: center;
+font-size: 1.5rem;
+color: rgb(236, 238, 241);
+text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.722);
 }
 
-/* Botones */
 .button {
-  width: 100%;
-  max-width: 300px;
-  margin: 0 auto;
+width: 100%;
+max-width: 300px;
+margin: 0 auto;
 }
 
-button {
-  background: linear-gradient(180deg, rgb(178, 113, 106), rgb(212, 239, 102));
-  font-size: 1rem;
-  color: white;
-  border-radius: 15px;
-  border: 2px outset black;
-  text-shadow: 2px 2px 3px black;
-}
-
-/* Imágenes y logos */
 .logo {
-  width: 60px;
-  height: 40px;
-  color: black;
+width: 60px;
+height: 40px;
+color: black;
 }
 
 img {
-  max-width: 100%;
+max-width: 100%;
 }
 
-.items img {
-  width: 90%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-  transition: all 0.5s;
-}
-
-.items figure {
-  overflow: hidden;
-}
-
-.items:hover img {
-  transform: scale(1.2);
-}
-
-/* Header */
 header {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 0 40px 0;
+display: flex;
+justify-content: space-between;
+padding: 30px 0 40px 0;
 }
 
-/* Contenedor de productos */
 .contenedor-productos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
 }
 
 .items {
-  border-radius: 10px;
+border-radius: 10px;
 }
 
 .items:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }
 
 .info-producto {
-  text-align: center;
-  font-size: 1.5rem;
-  color: rgb(236, 238, 241);
-  padding: 15px 30px;
-  line-height: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+text-align: center;
+font-size: 1.5rem;
+color: rgb(236, 238, 241);
+padding: 15px 30px;
+line-height: 2;
+display: flex;
+flex-direction: column;
+gap: 10px;
 }
 
 div[id='titulo-producto'] {
-  font-size: 1rem;
+font-size: 1rem;
 }
 
-/* Resultado */
-div[id='Resultado'] {
-  background: linear-gradient(95deg, rgb(237, 174, 127), rgb(235, 147, 225));
-  width: 90%;
-  max-width: 600px;
-  border-radius: 2px;
-  border: 3px outset rgb(0, 0, 0);
-  font-size: 1.3rem;
-  color: rgb(236, 238, 241);
-  text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.722);
-  margin: 20px auto; /* Centra el cuadro horizontalmente */
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+button {
+background: linear-gradient(180deg, rgb(178, 113, 106), rgb(212, 239, 102));
+font-size: 1rem;
+color: white;
+border-radius: 15px;
+border: 2px outset black;
+text-shadow: 2px 2px 3px black;
 }
+
+.items img {
+width: 90%;
+height: 500px;
+object-fit: cover;
+border-radius: 10px 10px 0 0;
+transition: all 0.5s;
+}
+
+.items figure {
+overflow: hidden;
+}
+
+.items:hover img {
+transform: scale(1.2);
+}
+
+div[id='Resultado'] {
+background: linear-gradient(95deg, rgb(237, 174, 127), rgb(235, 147, 225));
+width: 90%;
+max-width: 600px;
+border-radius: 2px;
+border: 3px outset rgb(0, 0, 0);
+font-size: 1.3rem;
+color: rgb(236, 238, 241);
+text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.722);
+margin: 20px auto; /* Centra el cuadro horizontalmente */
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+/* Estilo del modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Queda fijo */
+  z-index: 1; /* Enfrente */
+  left: 0;
+  top: 0;
+  width: 100%; /* Pantalla completa */
+  height: 100%; /* Pantalla completa */
+  overflow: auto; /* Si es necesario, habilita desplazamiento */
+  background-color: rgb(0, 0, 0); /* Fondo negro */
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo negro con opacidad */
+}
+*::before,
+*::after,
+* {
+  margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+margin: 0 auto;
+max-width: 90%;
+font-family: 'Lato', sans-serif;
+color: #333;
+background: linear-gradient(180deg, rgb(189, 89, 243), rgb(221, 100, 100), rgb(112, 103, 199));
+}
+
+
+  
+
+#option-azulitos, #option-gomitas, #option-pinchos {
+text-align: center;
+font-size: 1.25rem;
+color: rgb(0, 0, 0);
+text-shadow: 1px 2px 3px rgb(82, 151, 212);
+}
+
+p {
+text-align: center;
+font-size: 1.5rem;
+color: rgb(236, 238, 241);
+text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.722);
+}
+
+.button {
+width: 100%;
+max-width: 300px;
+margin: 0 auto;
+}
+
+.logo {
+width: 60px;
+height: 40px;
+color: black;
+}
+
+img {
+max-width: 100%;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+padding: 30px 0 40px 0;
+}
+
+.contenedor-productos {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+}
+
+.items {
+border-radius: 10px;
+}
+
+.items:hover {
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.info-producto {
+text-align: center;
+font-size: 1.5rem;
+color: rgb(236, 238, 241);
+padding: 15px 30px;
+line-height: 2;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+div[id='titulo-producto'] {
+font-size: 1rem;
+}
+
+button {
+background: linear-gradient(180deg, rgb(178, 113, 106), rgb(212, 239, 102));
+font-size: 1rem;
+color: white;
+border-radius: 15px;
+border: 2px outset black;
+text-shadow: 2px 2px 3px black;
+}
+
+.items img {
+width: 90%;
+height: 500px;
+object-fit: cover;
+border-radius: 10px 10px 0 0;
+transition: all 0.5s;
+}
+
+.items figure {
+overflow: hidden;
+}
+
+.items:hover img {
+transform: scale(1.2);
+}
+
+div[id='Resultado'] {
+background: linear-gradient(95deg, rgb(237, 174, 127), rgb(235, 147, 225));
+width: 90%;
+max-width: 600px;
+border-radius: 2px;
+border: 3px outset rgb(0, 0, 0);
+font-size: 1.3rem;
+color: rgb(236, 238, 241);
+text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.722);
+margin: 20px auto; /* Centra el cuadro horizontalmente */
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
 
 /* Estilo del modal */
 .modal {
@@ -164,65 +298,8 @@ div[id='Resultado'] {
   background-color: rgba(0, 0, 0, 0.4); /* Fondo negro con opacidad */
 }
 
-.modal-content {
-  background: linear-gradient(180deg, rgb(189, 89, 243), rgb(221, 100, 100), rgb(112, 103, 199));
-  margin: 15% auto; /* 15% desde la parte superior y centrado */
-  padding: 20px auto;
-  border: 7px solid #000000;
-  width: 30%; /* Puede ser un 80% o lo que quieras */
-  text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 19px;
-  border-radius: 3px;
-}
 
-label {
-  display: block;
-  margin: 10px 0;
-}
 
-.opciones {
-  color: rgb(255, 255, 255);
-  text-shadow: 3px 9px 3px rgb(0, 0, 0);
-}
-
-/* Media Queries para Responsividad */
-@media (max-width: 768px) {
-  body {
-    max-width: 100%;
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-
-  h3, h4 {
-    font-size: 1rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  .contenedor-productos {
-    grid-template-columns: 1fr;
-  }
-
-  .items img {
-    height: auto;
-  }
-
-  .modal-content {
-    width: 80%;
-  }
-}
-
-/* Estilos específicos para el formulario de registro */
 form {
   display: flex;
   flex-direction: column;
@@ -233,43 +310,55 @@ form {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
 }
 
-input, select, textarea {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+label {
+  display: block;
+  margin: 10px 0;
 }
 
-button[type="submit"] {
-  background: linear-gradient(180deg, rgb(178, 113, 106), rgb(212, 239, 102));
-  font-size: 1rem;
-  color: white;
-  border-radius: 15px;
-  border: 2px outset black;
-  text-shadow: 2px 2px 3px black;
-  padding: 10px;
-  cursor: pointer;
+.opciones
+{
+  color: rgb(255, 255, 255);
+text-shadow: 3px 9px 3px rgb(0, 0, 0);
 }
 
-button[type="submit"]:hover {
-  background: linear-gradient(180deg, rgb(212, 239, 102), rgb(178, 113, 106));
+
+/* Estilo del modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Queda fijo */
+  z-index: 1; /* Enfrente */
+  left: 0;
+  top: 0;
+  width: 100%; /* Pantalla completa */
+  height: 100%; /* Pantalla completa */
+  overflow: auto; /* Si es necesario, habilita desplazamiento */
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo negro con opacidad */
 }
 
-/* Media Queries para el formulario de registro */
-@media (max-width: 768px) {
-  form {
-    max-width: 100%;
-    padding: 10px;
-  }
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(95deg, rgba(167, 252, 232, 0.8), rgba(248, 167, 252, 0.8));
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(227, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 130%;
+}
+label {
+  display: block;
+  margin: 10px 0;
+}
 
-  input, select, textarea {
-    font-size: 0.9rem;
-  }
-
-  button[type="submit"] {
-    font-size: 0.9rem;
-    padding: 8px;
-  }
+.opciones
+{
+  color: rgb(255, 255, 255);
+text-shadow: 3px 9px 3px rgb(0, 0, 0);
 }
