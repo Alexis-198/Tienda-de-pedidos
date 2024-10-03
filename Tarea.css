@@ -24,7 +24,7 @@ text-shadow: 3px 9px 3px rgb(254, 8, 8);
 h2 {
   text-align: center;
   font-size: 1.2rem; /* Cambié a rem para consistencia */
-  color: rgb(0, 0, 0);
+  color: rgb(255, 252, 252);
   text-shadow: 3px 9px 3px rgb(0, 0, 0);
 }
 
@@ -143,20 +143,6 @@ align-items: center;
 }
 
 
-
-/* Estilo del modal */
-.modal {
-  display: none; /* Oculto por defecto */
-  position: fixed; /* Queda fijo */
-  z-index: 1; /* Enfrente */
-  left: 0;
-  top: 0;
-  width: 100%; /* Pantalla completa */
-  height: 100%; /* Pantalla completa */
-  overflow: auto; /* Si es necesario, habilita desplazamiento */
-  background-color: rgb(0, 0, 0); /* Fondo negro */
-  background-color: rgba(0, 0, 0, 0.4); /* Fondo negro con opacidad */
-}
 *::before,
 *::after,
 * {
@@ -325,18 +311,6 @@ text-shadow: 3px 9px 3px rgb(0, 0, 0);
 }
 
 
-/* Estilo del modal */
-.modal {
-  display: none; /* Oculto por defecto */
-  position: fixed; /* Queda fijo */
-  z-index: 1; /* Enfrente */
-  left: 0;
-  top: 0;
-  width: 100%; /* Pantalla completa */
-  height: 100%; /* Pantalla completa */
-  overflow: auto; /* Si es necesario, habilita desplazamiento */
-  background-color: rgba(0, 0, 0, 0.4); /* Fondo negro con opacidad */
-}
 
 form {
   display: flex;
