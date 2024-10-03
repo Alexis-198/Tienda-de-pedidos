@@ -185,3 +185,39 @@ label {
   color: rgb(255, 255, 255);
   text-shadow: 3px 9px 3px rgb(0, 0, 0);
 }
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  body {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3, h4 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .contenedor-productos {
+    grid-template-columns: 1fr;
+  }
+
+  .items img {
+    height: auto;
+  }
+
+  .modal-content {
+    width: 80%;
+  }
+}
