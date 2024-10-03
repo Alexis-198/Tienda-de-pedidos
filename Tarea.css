@@ -163,7 +163,7 @@ align-items: center;
   margin: 15% auto; /* 15% desde la parte superior y centrado */
   padding: 20px auto ;
   border: 7px solid #000000  ;
-  width: 20%  ; /* Puede ser un 80% o lo que quieras */
+  width: 30%  ; /* Puede ser un 80% o lo que quieras */
 text-align: center;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 font-size: 19px;
